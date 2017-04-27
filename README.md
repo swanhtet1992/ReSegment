@@ -1,12 +1,12 @@
 # ReSegment
 
 Trying out burmese syllable segmentation only with regex.
-Regex is heavely inspired from [sylbreak](https://github.com/ye-kyaw-thu/sylbreak) by [Ko Ye Kyaw Thu](https://github.com/ye-kyaw-thu/). 
+Base regex is heavely inspired from [sylbreak](https://github.com/ye-kyaw-thu/sylbreak) by [Ko Ye Kyaw Thu](https://github.com/ye-kyaw-thu/). 
 
 After testing with various news articles, these are the additional improvements:
 
 - Added support for numbers. (`၁၀၀ကျပ်` will be segmented into `['၁၀၀', 'ကျပ်']`)
-- Added support for words with special killers. This is mostly seen in English names like `ဘတ်ဇ်ခရောရှ့်ဂတ်` to `['ဘတ်ဇ်', 'ခ', 'ရောရှ့်', 'ဂတ်']` and `ဂျော့ချ်ဘုရှ်` to `['ဂျော့ချ်', 'ဘုရှ်']`.
+- Added support for words with special killers. This scenario can be see mostly in English names like `ဘတ်ဇ်ခရောရှ့်ဂတ်` -> `['ဘတ်ဇ်', 'ခ', 'ရောရှ့်', 'ဂတ်']` and `ဂျော့ချ်ဘုရှ်` -> `['ဂျော့ချ်', 'ဘုရှ်']`.
 - Added support for updated `tone mark` and `killer` rule. (`သ + င + ့ + ်` or `သ + င +  ် + ့` will be able to segment correctly into `['သင့်']`)
 
 # TEST
