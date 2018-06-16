@@ -1,7 +1,7 @@
 # ReSegment
 
-Trying out burmese syllable segmentation only with regex.
-Base regex is heavely inspired from [sylbreak](https://github.com/ye-kyaw-thu/sylbreak) by [Ko Ye Kyaw Thu](https://github.com/ye-kyaw-thu/). 
+This is Burmese syllable level segmentation by using the power of regex.
+The original regex is based on [sylbreak](https://github.com/ye-kyaw-thu/sylbreak) by [Ko Ye Kyaw Thu](https://github.com/ye-kyaw-thu/).
 
 After testing with various news articles, these are the additional improvements:
 
@@ -37,4 +37,5 @@ Result: `['ပိ', 'ဿာ', 'ချိန်', '၁၀', 'သား', 'ရှ�
 # NOTE
 This is just a simple proof of concept repo. Although I have tested the regex with various news articles, errors may still exist. Therefore, the code is provided “AS IS” without any warranty of any kind.
 
-However, I do hope that this regex could merge with [sylbreak](https://github.com/ye-kyaw-thu/sylbreak) too.
+# Contributors
+Java and Javascript versions are contributed by [chanmratekoko](https://github.com/chanmratekoko) so that you don't have to convert the regex on your own. 🤠
